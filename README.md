@@ -49,6 +49,14 @@ This is a PyTorch implementation of the Homophily-Enhanced Self-supervision (HES
 
 
 
+## Dataset
+
+The datasets used in this paper are available in:
+
+https://drive.google.com/file/d/1bCkI1fTmgHLHesPkyzUtAIriLPswZZ4f/view?usp=share_link
+
+
+
 
 ## Running the code
 
@@ -64,6 +72,22 @@ where the *data_name* is one of the ten datasets (Cora, Citeseer, Pubmed, ogbn-a
 
 ```
 python main.py --dataset cora
+```
+
+
+
+## Citation
+
+If you find this project useful for your research, please use the following BibTeX entry.
+
+```
+@article{wu2023homophily,
+  title={Homophily-Enhanced Self-supervision for Graph Structure Learning: Insights and Directions},
+  author={Wu, Lirong and Lin, Haitao and Liu, Zihan and Liu, Zicheng and Huang, Yufei and Li, Stan Z},
+  journal={IEEE Transactions on Neural Networks and Learning Systems},
+  year={2023},
+  publisher={IEEE}
+}
 ```
 
 
