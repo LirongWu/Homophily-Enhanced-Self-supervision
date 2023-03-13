@@ -5,7 +5,7 @@ This is a PyTorch implementation of the Homophily-Enhanced Self-supervision (HES
 
 * Dataset Loader (Cora, Citeseer, Pubmed, ogbn-arxiv, Texas, Cornell, Wisconsin, Actor, MNIST, and Fashion-MNIST)
 
-* Various supervision signals ($\mathcal{L}_{cla}$, $\mathcal{L}_{DAE}$, and $\mathcal{L}_{HES}$)
+* Various supervision signals
 
 * Training paradigm pre-training and fine-tuning on ten datasets
 
@@ -26,15 +26,15 @@ This is a PyTorch implementation of the Homophily-Enhanced Self-supervision (HES
 ## Description
 
 * main.py  
-  * get_loss_classification() -- Calculate downstream supervision (loss $\mathcal{L}_{cla}$)
-  * get_loss_reconstruction() -- Calculate reconstruction-based self-supervision (loss $\mathcal{L}_{DAE}$)
+  * get_loss_classification() -- Calculate downstream supervision
+  * get_loss_reconstruction() -- Calculate reconstruction-based self-supervision
   * main() -- Pre-train and fine-tune model for node classification task on ten real-world datasets
 * model.py  
   
   * GCN_CLA() -- GCN classifier
   * GSL() -- Learn a task-specific underlying graph structure
   * GCN_DAE() -- Denoising Autoencoder
-  * get_loss_homophily() -- Calculate the homophily-enhanced self-supervision (loss $\mathcal{L}_{HES}$)
+  * get_loss_homophily() -- Calculate the homophily-enhanced self-supervision
 * dataset.py  
 
   * load_data() -- Load Cora, Citeseer, Pubmed, Texas, Cornell, Wisconsin, and Actor datasets
